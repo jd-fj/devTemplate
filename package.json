@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/taylulz/devTemplate/issues"
   },
-  "homepage": "https://github.com/taylulz/devTemplate#readme"
+  "homepage": "https://github.com/taylulz/devTemplate#readme",
+  "devDependencies": {
+    "webpack": "4.39.3"
+  }
 }
