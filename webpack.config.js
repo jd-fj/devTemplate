@@ -6,6 +6,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'devTemplate',
+      template: './src/index.html',
+      inject: 'body'
+    })
+  ]
   module: {
     rules: [
       {
