@@ -9,7 +9,7 @@ describe('Pizza', () => {
   
   test('should correctly create a pizza object with size large and pepperoni and cheese toppings', () => {
     expect(reusablePizza.size).toEqual("large");
-    expect(reusablePizza.topping).toEqual(["pepperoni", "chee"])
+    expect(reusablePizza.topping).toEqual(["pepperoni", "cheese"])
   });
 });
 
