@@ -5,7 +5,7 @@ describe('Pizza', () => {
   test('should correctly create a pizza object with size small and cheese topping', () => {
     const pizza = new Pizza ("small", ["cheese"]);
     expect(pizza.size).toEqual("small");
-    expect(pizza.topping).toEqual("cheese")
+    expect(pizza.topping).toEqual(["cheese"])
   });
 });
 
