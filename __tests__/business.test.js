@@ -1,3 +1,14 @@
+import Pizza from './../src/business.js';
+
+describe('Pizza', () => {
+  
+  test('should correctly create a pizza object with size small and cheese topping', () => {
+    const pizza = new Pizza ("small", ["cheese"]);
+    expect(pizza.size).toEqual("small");
+    expect(pizza.topping).toEqual("cheese")
+  });
+});
+
 // export default function Pizza(size, topping) {
 //   this.size = size;
 //   this.topping = topping;
