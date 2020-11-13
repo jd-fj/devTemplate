@@ -1,11 +1,15 @@
 import Pizza from './../src/business.js';
 
 describe('Pizza', () => {
+  let reusablePizza;
+
+  beforeEach(() => {
+    reusablePizza = new Pizza("large", ["pepperoni", "cheese"]);
+  });
   
-  test('should correctly create a pizza object with size small and cheese topping', () => {
-    const pizza = new Pizza ("small", ["cheese"]);
-    expect(pizza.size).toEqual("small");
-    expect(pizza.topping).toEqual(["cheese"])
+  test('should correctly create a pizza object with size large and pepperoni and cheese toppings', () => {
+    expect(reusablePizza.size).toEqual("large");
+    expect(reusablePizza.topping).toEqual(["pepperoni", "chee"])
   });
 });
 
